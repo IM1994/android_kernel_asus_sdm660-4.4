@@ -1,4 +1,4 @@
-SkyWalker 4.4.x Kernel Source
+WikWik 4.4.x Kernel Source
 ====================================
 
 Getting Started
@@ -23,11 +23,14 @@ This Kernel is using Stock Freq. If u want Overclocked Freq, Do this:
 To Overclock CPU:
 
 - Add `overclock.cpu=1` into boot cmdline.
+- Hardcode, set this to 1
+  https://github.com/IM1994/android_kernel_asus_sdm660-4.4/blob/76b479c885e03d9a3335cf9355bc2287cccde725/drivers/clk/qcom/clk-cpu-osm.c#L268
 
 To Overclock GPU:
 
 - Add `overclock.gpu=1` into boot cmdline.
-
+- Hardcode, set this to 1
+  https://github.com/IM1994/android_kernel_asus_sdm660-4.4/blob/76b479c885e03d9a3335cf9355bc2287cccde725/drivers/gpu/msm/adreno.c#L63
 KernelSU
 --------
 KernelSU is implemented and enabled by default. If u don't want it...
